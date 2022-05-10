@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Online Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="main.html">
+                <img src="imageshj.jpg" class="logo">
+            </a>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="login.html">Admin_Login</a></li>
+                    <li><a href="co.html">Contact_Us</a></li>
+                    <li><a class="current" href="aboutus.html">About_Us</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="aboutbody">
+            <br>
+            <br>
+            <h1>VIP PARKING STAND</h1>
+            <br>
+            <br>
+            <h2>History</h2>
+            <br>
+            <p>Over the years, car parking systems and the accompanying technologies have increased and diversified. Car parking systems have been around almost since the time cars were invented. In any area where there is a significant amount of traffic, there are car parking systems. Car Parking systems were developed in the early 20th century in response to the need for storage space for vehicles.</p>
+            <br>
+            <br>
+            <h2>Benefits</h2>
+            <br>
+            <p>There are several advantages of employing a car park system for urban planners, business owners and vehicle drivers. They offer convenience for vehicle users and efficient usage of space for urban-based companies. Automated car park systems save time, money, space and simplify the often tedious task of parking. Auto car lifts move vehicles into safe and secure storage areas until they are needed.</p>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="social-links">
+            <img src="fb.png">
+            <img src="tw.png">
+            <img src="ig.png">
+        </div>
+        <div class="footer">
+            <h2>Internet Of Thing Based Car Parking System</h2>
+            <p>The publication is licensed under a Pradum & Satyam groups Pvt Ltd</p>
+            <p>License BY P.S Group</p>
+        </div>
+    </div>
+    <script>
+        var menulist=document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+        function togglemenu(){
+            if(menulist.style.maxHeight=="0px"){
+                menulist.style.maxHeight="170px";
+            }
+            else{
+                menulist.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>

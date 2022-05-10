@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Online Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bookcontainer">
+        <div class="navbar">
+            <a href="main.html">
+                <img src="imageshj.jpg" class="logo">
+            </a>
+            <nav>
+                <ul id="menulist">
+                    <li><a class="current" href="main.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="login.html">Admin_Login</a></li>
+                    <li><a href="co.html">Contact_Us</a></li>
+                    <li><a href="aboutus.html">About_Us</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <form action="book.php" method="POST">
+            <li>
+                <label for="Vahicle Number">Vahicle Number</label>
+                <input type="text" id="fname" name="Vahicle Number" placeholder="Vahicle Number.">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your E-mail">
+                
+                <label for="mno">Mobile No.</label>
+                <input type="text" id="mno" name="mno" placeholder="Mobile Number">
+                
+                <label for="ID">ID</label>
+                <select id="distric" name="distric" input type="text">
+                <option value="Aadhar card">Aadhar card</option>
+                <option value="pan Card">Pan Card</option>
+                <option value="Othar"> Other </option>
+                </select>
+
+                <label for="ino">ID Number</label>
+                <input type="text" id="ino" name="*********" placeholder="**********..">
+                
+                <label for="Location"> Location</label>
+                    <select id="distric" name="distric">
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Lucknow">Lucknow</option>
+                    </select>
+
+                <label for="Time&Rate"> Time&Rate</label>
+                    <select id="Time&Rate" name="Time&Rate">
+                        <option value="Hourly">₹ 20/hour </option>
+                        <option value="6 hour">₹ 50/6 hour</option>
+                        <option value="12 hour">₹ 90/12 hour</option>
+                        <option value="Daily">₹ 150 per Day</option>
+                    </select>
+            </li>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="social-links">
+            <img src="fb.png">
+            <img src="tw.png">
+            <img src="ig.png">
+        </div>
+        <div class="footer">
+            <h2>Internet Of Thing Based Car Parking System</h2>
+            <p>The publication is licensed under a Pradum & Satyam groups Pvt Ltd</p>
+            <p>License BY P.S Group</p>
+        </div>
+    </div>
+    <script>
+        var menulist=document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+        function togglemenu(){
+            if(menulist.style.maxHeight=="0px"){
+                menulist.style.maxHeight="170px";
+            }
+            else{
+                menulist.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
